@@ -2,7 +2,7 @@
     Number Mirror
     -> CodeChef {rating: 200}
 
-    Write a program that takes a number NN as the input, and prints it to the output.
+    Write a program that takes a number N as the input, and prints it to the output.
 */
 
 use std::io;
