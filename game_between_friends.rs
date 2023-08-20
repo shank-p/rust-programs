@@ -1,6 +1,6 @@
 /*
     Game between friends [FRGAME]
-    -> CodeChef 
+    -> CodeChef {rating: 991}
 
     Nitin and Sobhagya were playing a game with coins. If Sobhagya has more coins then he is winning, 
     otherwise Nitin is winning. Note that this means if both Nitin and Sobhagya have the same number 
