@@ -14,14 +14,14 @@ use std::cmp::Ordering;
 
 fn search(nums: Vec<i32>, target: i32) -> i32 {
     
-    let (mut left, mut right) = (0, nums.len()-1);
+    let (mut left, mut right) = (0, nums.len());
     let mut mid;
     while left < right {
         mid = (left + right)/2 as usize;
         match nums[mid].cmp(&target) {
             Ordering::Equal => return mid as i32,
             Ordering::Less => left = mid + 1,
-            Ordering::Greater => right = mid - 1,
+            Ordering::Greater => right = mid,
         }
     }
     return -1;
