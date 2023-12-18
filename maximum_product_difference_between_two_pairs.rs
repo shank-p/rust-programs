@@ -30,7 +30,7 @@ pub fn max_product_difference(nums: Vec<i32>) -> i32 {
             z = num;
         }
     }
-    println!("intermediate w: {w}, x = {x}, y: {y}, z: {z}");
+
     (w*x) - (y*z)
 }
 
