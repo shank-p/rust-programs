@@ -8,13 +8,11 @@
 use std::io;
 
 pub fn replace_words(dictionary: Vec<String>, sentence: String) -> String {
-
     let mut dictionary = dictionary.clone();
     let mut sentence_split: Vec<String> = sentence.trim()
                                                 .split(' ')
                                                 .map(|s| s.to_string())
                                                 .collect();
-
     for _ in 0..dictionary.len() {
         for i in 0..dictionary.len()-1 {
             if dictionary[i].len() > dictionary[i+1].len() {
@@ -24,7 +22,6 @@ pub fn replace_words(dictionary: Vec<String>, sentence: String) -> String {
             }
         }
     }
-
     for i in 0..dictionary.len() {
         for idx in 0..sentence_split.len() {
             if sentence_split[idx].starts_with(&dictionary[i]) {
